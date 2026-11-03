@@ -1,0 +1,42 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int opcion;
+        double total;
+        double bono; 
+        double sueldo = 15.890;
+        double sueldoS = 35.56089;
+        double descuento;
+        double totalS;
+    
+        System.out.println("1- Repositor");
+        System.out.println("2- Cajero");
+        System.out.println("3- Supervisor");
+        System.out.println("1- Repositorio");
+        System.out.println("Ingrese su cargo de trabajo");
+        opcion = sc.nextInt();
+        switch(opcion){
+            case 1:
+                bono = sueldo*0.10;
+                total = sueldo+bono;
+                System.out.println("Su sueldo es de: "+ sueldo);
+                System.out.println("mas un bono de: "+ bono);
+                System.out.println("el total de sueldo seria: "+ total);
+                break;
+            case 2:
+                System.out.println("Su sueldo es de 25.630.89");
+                break;
+            case 3:
+                descuento = sueldoS - 0.11;
+                totalS = sueldoS +  descuento;
+                System.out.println("Su sueldo es de: "+ sueldoS);
+                System.out.println("Se le descontara: " + descuento);
+                System.out.println("Para untotal de: " + totalS);
+                break;
+            default:
+                System.out.println("Error");
+               
+        }
+        
+    }
+    
+}
